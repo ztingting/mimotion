@@ -32,6 +32,10 @@
 
 需要运行的时间-8就是UTC时间
 
+### 五、启动
+
+> Actions-->点击“I understand my workflows, go ahead and enable them”-->All workflows-->刷步数-->点击“Enable workflow”
+
 ## 注意事项
 
 1. 每天运行一次，在下午 6 点
