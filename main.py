@@ -133,12 +133,13 @@ if __name__ ==  "__main__":
     if len(user_list) == len(passwd_list):
         push = ''
         for line in range(0,len(user_list)):
-            setp_array = step_list[line].split('-')
-            if len(setp_array) == 2:
-                step = str(random.randint(int(setp_array[0]),int(setp_array[1])))
-            elif str(step) == '0':
-                step = ''
-            push += main(user_list[line], passwd_list[line], step) + '\n'
+            step_array = step_list[line].split('-')
+            step_input = ''
+            if len(step_array) == 2:
+                step_input = str(random.randint(int(step_array[0]),int(step_array[1])))
+            elif str(step_list[line]) == '0':
+                step_input = ''
+            push += main(user_list[line], passwd_list[line], step_input) + '\n'
     else:
         print('用户名和密码数量不对')
     
