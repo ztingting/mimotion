@@ -128,11 +128,12 @@ if __name__ ==  "__main__":
 
     user_list = user.split('#')
     passwd_list = passwd.split('#')
-    setp_array = step.split('-')
-
+    step_list = step.split('#')
+    
     if len(user_list) == len(passwd_list):
         push = ''
         for line in range(0,len(user_list)):
+            setp_array = step_list[line].split('-')
             if len(setp_array) == 2:
                 step = str(random.randint(int(setp_array[0]),int(setp_array[1])))
             elif str(step) == '0':
